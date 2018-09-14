@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container:before {
+  content: "";
+  width: 100%;
+  height: 0;
+  display: table;
+  clear: both;
+}
+
+.shadow_sm {
+  box-shadow: 1px 1px 5px #aaa;
+}
+
+.shadow_md {
+  box-shadow: 3px 3px 15px #aaa;
+}
+
+.shadow_lg {
+  box-shadow: 6px 6px 30px #aaa;
+}
+
+.shadow_xl {
+  box-shadow: 10px 10px 50px #aaa;
+}
+
+.h-reset {
+  margin: 0;
+  padding: 0;
+}
+
+.h-position-t {
+  top: 0.5em;
+}
+
+.h-position-b {
+  bottom: 0.5em;
+}
+
+.col {
+  float: left;
+  padding: 1em;
+}
+@media screen and (min-width: 1200px) {
+  .col {
+    width: calc(100% / 3);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .col {
+    width: calc(100% / 3);
+  }
+}
+@media screen and (max-width: 800px) {
+  .col {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 590px) {
+  .col {
+    width: calc(100%);
+  }
+}
+
+.card-item {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.card-item__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+.card-item__title {
+  font-size: 1.7em;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.3em 0.4em;
+  width: 100%;
+  color: #222;
+}
+.card-item__img-wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.card-item__img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card-item__content {
+  padding: 1em 0.8em;
+}
+.card-item__text-item {
+  padding: 0;
+  margin: 0;
+  color: #222;
+  font-size: 0.9em;
+}
+.card-item__footer {
+  padding: 0.5em;
+}
+.card-item__link {
+  color: #16f;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5em 0.4em 0.5em;
+  transition: 0.3s ease;
+}
+.card-item__link:hover {
+  color: #0c47b3;
+  text-shadow: 1px 1px 1px #ddd;
+}
+
+.block {
+  color: red;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .block {
+    color: green;
+  }
+}
+@media screen and (max-width: 500px) {
+  .block {
+    color: orange;
+  }
+}
+
+.navbar {
+  margin-bottom:0;
+  border-radius: 0;
+
+}
+footer {
+  background-color:#f2f2f2;
+  padding: 25px;
+}
+
+
+/*// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
