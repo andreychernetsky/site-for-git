@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>модальное окно</title>
+</head>
+<body>
+	<style>
+		.modal {
+	position: fixed;
+	top: -100%;
+	right: 0;
+	left: 0;
+	max-width: 600px;
+	min-height: 200px;
+	padding: 20px;
+	margin: 30px auto;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.2), 0 1px 2px 0 	rgba(122,129,132,0.3);
+	transition: top .5s ease-in-out;
+	z-index: 10;
+	
+	&.is-open  {
+		top: 0;
+	}
+	
+	&__desc {
+		min-height: 70px;
+	}
+	
+	.btn {
+		padding: 10px 30px;
+		border: none;
+		outline: none;
+		border-radius: 10px;
+		box-shadow: 0 2px 6px rgba(0,0,0, .3);
+		color: white;
+		transition: background 250ms ease-in-out;
+		cursor: pointer;
+		
+		&--green {
+			background: #47AC84;
+			
+			&:hover {
+				background: #38B885;
+			}
+		}
+		
+		&--red {
+			background: #AC4E5D;
+			
+			&:hover {
+				background: #B8495B;
+			}
+		}
+	}
+}
+	</style>
+	<div class="modal js-modal">
+	<h2 class="modal__title">Согласие</h2>
+	<p class="modal__desc">Описание согласия</p>
+	
+	<button type="button" class="btn btn--green js-accept">
+		Принимаю согласие
+	</button>
+	<button type="button" class="btn btn--red js-close">
+		Закрыть
+	</button>
+</div>
+<script>
+// 	document.addEventListener("DOMContentLoaded", ready);
+
+// function ready() {
+// 	var modal = document.querySelector('.js-modal');
+// 	var btn_accept = modal.querySelector('.js-accept');
+// 	var btn_close = modal.querySelector('.js-close');
+	
+// 	if(localStorage.getItem('accept') != 1) {
+// 		setTimeout(function() {
+// 			modal.classList.add('is-open');
+// 		}, 3000);
+// 	}
+	
+// 	btn_accept.addEventListener('click', function() {
+// 		localStorage.setItem('accept', 1);
+// 		modal.classList.remove('is-open');
+// 	});
+	
+// 	btn_close.addEventListener('click', function() {
+// 		modal.classList.remove('is-open');
+// 	});
+// }
+
+второй вариант
+
+
+
+
+</script>
+</body>
+</html>
